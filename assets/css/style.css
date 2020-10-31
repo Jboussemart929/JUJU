@@ -1,0 +1,71 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-position: absolute;
+    background-size: cover;
+}
+
+
+/* effet au passage de la souris */
+.container{
+  align-items: center;
+  padding: 30px;
+}
+
+a {
+    position: relative;
+    color: white;
+  }
+  a:after {
+    content: '';
+    transform-origin: 0 0; 
+    transform: scaleX(0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: .4em; 
+    background:gray;
+    z-index: -1;
+    opacity: 0.8;
+    transition: transform .3s;
+  }
+  a:hover::after {
+    transform: scaleX(1);
+  }
+  .container-fuild{
+      padding: 0;
+  }
+  .menu{
+      display: flex;
+      justify-content: space-evenly;
+  }
+  .ban{
+    object-fit: cover;
+    width: 100%;
+    z-index: -1;
+  }
+  .titre-banner{
+      position : absolute;
+      top: 50%;
+      width: 100%;
+      text-align: center;
+      color: white;  
+  }
+  h1{
+      font-size: 9rem;
+  }
+  .project{
+    height: auto;
+    width: 100%;
+  }
+  .nav{
+    position: absolute;
+    top: 50px;
+  }
+  .item{
+    height: auto;
+    width: 100%;
+  }
